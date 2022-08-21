@@ -1,0 +1,117 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+    line-height: 15px;
+    
+}
+
+/* main */
+.main{
+    margin-top: -25px;
+    background-image: url('http://localhost/portfolio/public/img/portfolio.png');
+    height: 620px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.main::after{
+content: '';
+display: block;
+background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+position: absolute;
+width: 100%;
+height: 100%;
+bottom: 0;
+left: 0;
+}
+/* content */
+.content-text{
+    position: relative;
+    z-index: 3;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.content-text h3,p{
+    text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+}
+.content-image{
+    position: relative;
+    z-index: 3;
+    width: 180px;
+    
+}
+.content-image img{
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+}
+.home{
+
+    position: relative;
+    z-index: 3;
+    color: #fffc;
+    font-weight: 100;
+    text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+}
+
+.home span{
+font-weight: 800;
+color: white;
+
+}
+.about{
+    padding: 50px 0;
+
+}
+.skills{
+    z-index: 3;
+    position: relative;
+    /* padding-top: 100px; */
+    padding: 100px 140px;
+}
+.skills img{
+    width: 100px;
+    padding-bottom: 15px;
+
+}
+
+/* tombol */
+.tombol-menu{
+    right: 0;
+    position: absolute;
+    z-index: 999999;
+}
+/* responsive */
+@media (min-width: 992px) {
+    .tombol-menu{
+    right: 0;
+    position: absolute;
+    z-index: 3;
+    }
+    .main{
+        background-position: top;
+        height: 635px;
+    }
+    .about{
+        padding: 100px 0;
+     
+    }
+    .content-text{
+        font-size:25px ;
+        line-height: 15px;
+        text-align: start;
+    }
+    
+    .skills{
+        padding-top: 170px;
+        position: relative;
+        z-index: 3;
+    }
+    .skills img{
+        width: 300px;
+        padding-bottom: 15px;
+    }
+    
+ }
